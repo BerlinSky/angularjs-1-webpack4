@@ -1,12 +1,12 @@
-module.exports = function(ngModule) {
-  ngModule.directive('hello', function() {
+export default (ngModule) => {
+  ngModule.directive('hello', () => {
     return {
       restrict: 'E',
       scope: {},
       templateUrl: 'directives/hello.html',
       controllerAs: 'vm',
       controller: function() {
-        var vm = this;
+        const vm = this;
 
         vm.greeting = 'Hello Webpack';
       }
