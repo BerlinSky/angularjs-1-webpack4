@@ -1,9 +1,9 @@
 {
-  "name": "webpack-angular",
+  "name": "angular1-webpack4",
   "version": "1.0.0",
-  "description": "Example of using webpack with an angular project for an egghead.io lesson",
+  "description": "Using webpack 4with an angularJS 1 project",
   "main": "app/index.js",
-  "repository": "https://github.com/kentcdodds/webpack-angular.git",
+  "repository": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/.bin/webpack-dev-server --content-base app",
@@ -11,10 +11,9 @@
   },
   "keywords": [
     "webpack",
-    "angular",
-    "egghead.io"
+    "angular"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
+  "author": "PHY",
   "license": "MIT",
   "devDependencies": {
     "angular-formly": "^4.0.8",
