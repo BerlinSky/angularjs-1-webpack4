@@ -3,4 +3,4 @@ const ngModule = angular.module('app', []);
 
 console.log(ngModule);
 
-require('./directives')(ngModule);
+require('./directives').default(ngModule);

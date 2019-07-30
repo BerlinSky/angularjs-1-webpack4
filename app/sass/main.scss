@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  padding: 0;
+  line-height: 1;
+}
+
+.l-siteContainer {
+  min-height: 100vh;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  background-color: lightyellow;
+}
+
+.l-mainContent {
+  flex: 1;
+  display: flex;
+}
+
+header {
+  background-color: lightgreen;
+  max-height: 75px;
+}
+
+footer {
+  background-color: lightgreen;
+  max-height: 65px;
+}
