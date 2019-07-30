@@ -9,7 +9,8 @@
     "dev": "webpack --mode development",
     "test": "jest --coverage",
     "dev:watch": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
   },
   "keywords": [
     "webpack",
