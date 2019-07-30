@@ -13,5 +13,6 @@
   "rules": {
     "no-unused-vars": 2,
     "prefer-const": 2
-  }
+  },
+  "extends": ["plugin:prettier/recommended"]
 }
