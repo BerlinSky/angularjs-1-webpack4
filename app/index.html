@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>Angular with Webpack</title>
-</head>
-<body ng-app="app">
-<h1>Angular + Webpack</h1>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
 
-<hello></hello>
+    <title>Mini Component Rounter</title>
 
-<script src="bundle.js"></script>
-</body>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link type="text/css" href="main.css">
+  </head>
+
+  <body ng-app="app">
+    <div class="l-siteContainer">
+      <header>
+        <h4>Page Header</h4>
+        <!-- <div><a href="#">Home Page</a></div> -->
+      </header>
+
+      <section id="content" class="l-mainContent">
+        <h3>Content</h3>
+
+        <hello></hello>
+      </section>
+
+      <footer class="l-footer footer">
+        <h4>Page Footer</h4>
+      </footer>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
 </html>
