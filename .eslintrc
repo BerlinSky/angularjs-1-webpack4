@@ -2,8 +2,7 @@
   "parserOptions": {
     "ecmaVersion": 2017,
     "sourceType": "module",
-    "ecmaFeatures": {
-    }
+    "ecmaFeatures": {}
   },
   "env": {
     "browser": true,
@@ -14,5 +13,5 @@
     "no-unused-vars": 2,
     "prefer-const": 2
   },
-  "extends": ["plugin:prettier/recommended"]
+  // "extends": ["plugin:prettier/recommended"]
 }

@@ -8,7 +8,7 @@ export default (ngModule) => {
       controller: function() {
         const vm = this;
         vm.greeting = 'Hello Webpack';
-      },
+      }
     };
   });
 };

@@ -1,30 +1,43 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en" ng-app="app">
 
-    <title>Mini Component Rounter</title>
+<head>
+  <meta charset="UTF-8" />
+  <base href="">
 
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  </head>
+  <title>Mini Component Rounter</title>
 
-  <body ng-app="app">
-    <div class="l-siteContainer">
-      <header>
-        <h4>Page Header</h4>
-        <!-- <div><a href="#">Home Page</a></div> -->
-      </header>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
 
-      <section id="content" class="l-mainContent">
-        <h3>Content</h3>
+<body>
+  <div class="l-siteContainer">
+    <header>
+      <h4>Page Header</h4>
+      <!-- <div><a href="#">Home Page</a></div> -->
+    </header>
 
-        <hello></hello>
-      </section>
+    <section id="content" class="l-mainContent">
+      <h3>Content</h3>
 
-      <footer class="l-footer footer">
-        <h4>Page Footer</h4>
-      </footer>
-    </div>
-  </body>
+      <hello></hello>
+      <div>
+        <ul class="nav nav-pills">
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="list">Shopping List</a></li>
+        </ul>
+      </div>
+
+      <div ui-view></div>
+
+    </section>
+
+    <footer class="l-footer footer">
+      <h4>Page Footer</h4>
+    </footer>
+  </div>
+
+</body>
+
 </html>
