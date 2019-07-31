@@ -11,7 +11,7 @@ ngModule.config(function ($urlRouterProvider, $stateProvider) {
       url: '/',
       // url: '/home',
       template: require('./home/home.html'),
-      // controller: 'MainCtrl as home'
+      controller: 'HomeController as home'
     })
     .state('noAccess', {
       url: '/noAccess',
@@ -27,8 +27,9 @@ ngModule.run(function ($location, userProfile) {
   profile.access ? $location.path('/home') : $location.path('/noAccess');
 });
 
-ngModule.controller('MainCtrl', function ($scope) {
-  $scope.siteName = 'New Home';
-});
+// ngModule.controller('MainCtrl', function ($scope) {
+//   $scope.siteName = 'New Home';
+// });
+require('./home').default(ngModule);
 
 require('./directives').default(ngModule);
