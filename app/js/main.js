@@ -11,7 +11,7 @@ ngModule.config(function ($urlRouterProvider, $stateProvider) {
       url: '/',
       // url: '/home',
       template: require('./home/home.html'),
-      controller: 'HomeController as home'
+      controller: 'HomeController as vm'
     })
     .state('noAccess', {
       url: '/noAccess',
