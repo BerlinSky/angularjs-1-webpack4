@@ -1,6 +1,5 @@
 import 'angular/angular.js';
 import uiRouter from 'angular-ui-router';
-// import userProfileService from './services/UserProfile';
 
 const ngModule = angular.module('app', [uiRouter]);
 
@@ -21,28 +20,15 @@ ngModule.config(function ($urlRouterProvider, $stateProvider) {
     });
 });
 
-ngModule.service('userProfile', function () {
-  const model = this,
-    userProfile = {
-      "access": true,
-      "components": ["1000", "2000"]
-      // "components": ["1000"]
-    };
-
-  model.getUserProfile = function () {
-    return userProfile;
-  }
-})
+require('./services/UserProfile').default(ngModule);
 
 ngModule.run(function ($location, userProfile) {
-  const profile = userProfile.getUserProfile();
+  const profile = userProfile;
   profile.access ? $location.path('/home') : $location.path('/noAccess');
 });
 
 ngModule.controller('MainCtrl', function ($scope) {
   $scope.siteName = 'New Home';
 });
-
-console.log(ngModule);
 
 require('./directives').default(ngModule);
