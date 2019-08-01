@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 export default (ngModule) => {
   ngModule.directive('hello', () => {
     return {
@@ -5,7 +6,7 @@ export default (ngModule) => {
       scope: {},
       template: require('./hello.html'),
       controllerAs: 'vm',
-      controller: function() {
+      controller: () => {
         const vm = this;
         vm.greeting = 'Hello Webpack';
       }

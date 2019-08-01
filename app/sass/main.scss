@@ -34,3 +34,13 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+.infoForm {
+  flex: 1;
+  background-color: #fff;
+}
+
+.additionalInfo {
+  flex: 0 0 35vw;
+  background-color: beige;
+}
