@@ -3,7 +3,7 @@
 import 'angular/angular.js';
 
 export default (ngModule) => {
-  ngModule.controller('HomeController', ($scope) => {
+  ngModule.controller('HomeController', ($scope, userProfile) => {
     $scope.siteName = 'New Home for Components';
 
     const formInput = `
@@ -18,10 +18,10 @@ export default (ngModule) => {
       </div>
     `;
 
-    const userProfile = {
-      access: true,
-      components: ['1000', '2000']
-    };
+    // const userProfile = {
+    //   access: true,
+    //   components: ['1000', '2000']
+    // };
 
     const homeCompMap = [
       {
