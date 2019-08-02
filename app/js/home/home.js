@@ -18,11 +18,6 @@ export default (ngModule) => {
       </div>
     `;
 
-    // const userProfile = {
-    //   access: true,
-    //   components: ['1000', '2000']
-    // };
-
     const homeCompMap = [
       {
         id: '1000',
