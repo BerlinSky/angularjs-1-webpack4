@@ -18,7 +18,7 @@
   "devDependencies": {
     "angular-formly": "^4.0.8",
     "api-check": "^6.0.10",
-    "babel": "^4.7.4",
+    "babel": "^6.23.0",
     "babel-core": "^4.7.4",
     "babel-loader": "^4.1.0",
     "css-loader": "^0.9.1",
